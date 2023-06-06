@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.listadenomes.HelloController">
+   <children>
+      <Label layoutX="77.0" layoutY="23.0" text="Minha lista de Compras">
+         <font>
+            <Font name="Bell MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="77.0" layoutY="113.0" prefHeight="25.0" prefWidth="291.0" />
+      <Label layoutX="81.0" layoutY="77.0" text="Digite um item:" />
+      <Button layoutX="77.0" layoutY="147.0" mnemonicParsing="false" onAction="#addName" prefHeight="25.0" prefWidth="158.0" text="Inserir" />
+      <ListView fx:id="listBebidas" layoutX="62.0" layoutY="238.0" prefHeight="156.0" prefWidth="120.0" />
+      <ListView fx:id="listAlimentos" layoutX="229.0" layoutY="238.0" prefHeight="156.0" prefWidth="120.0" />
+      <ListView fx:id="listFrutas" layoutX="398.0" layoutY="238.0" prefHeight="156.0" prefWidth="120.0" />
+      <Label layoutX="62.0" layoutY="213.0" text="Bebidas" />
+      <Label layoutX="229.0" layoutY="213.0" text="Alimentos" />
+      <Label layoutX="398.0" layoutY="213.0" text="Frutas" />
+      <CheckBox fx:id="bebidaCheck" layoutX="458.0" layoutY="77.0" mnemonicParsing="false" text="Bebida" />
+      <CheckBox fx:id="alimentoCheck" layoutX="458.0" layoutY="105.0" mnemonicParsing="false" text="Alimento" />
+      <CheckBox fx:id="frutaCheck" layoutX="458.0" layoutY="130.0" mnemonicParsing="false" text="Fruta" />
+      <Label layoutX="446.0" layoutY="43.0" text="Selecione:" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="558.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@carrinho-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
